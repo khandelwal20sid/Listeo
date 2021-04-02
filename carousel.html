@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* adapted from  https://codepen.io/glebkema/pen/Xjryjd*/
+        
+        .owl-item > div:after {
+          font-family: sans-serif;
+          font-size: 24px;
+          font-weight: bold;
+        }
+
+        .active.center {
+          transform: scale(1);
+          -webkit-filter: grayscale(0); /* Safari 6.0 - 9.0 */
+            filter: grayscale(0);
+        }
+        .active {          
+          transition: .6s ease;
+          -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="owl-carousel">
+        <div class="active-carousel-area d-flex flex-column justify-content-between">              
+            <div class="active-carousel-text">
+              <div class="d-flex align-items-center">
+                <div class="double-codes px-2">"</div>
+                <div class="text-white px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem suscipit sed nemo, ab officia illum quibusdam consequuntur aspernatur eligendi mollitia?</div>
+              </div>
+              <div class="active-carousel-text-arrow"><i class="fas fa-sort-down"></i></div>
+            </div>                                            
+            <div class="active-carousel-img d-flex flex-column justify-content-center align-items-center text-center">
+              <div><img src="img/happy-client-01.jpg" alt="" class="rounded-circle shadow"></div>
+              <div class="py-2">Jennie Smith</div>
+              <div class="card-tags small bg-pink main-color px-2">COFFEE SHOP OWNER</div>
+            </div>
+          </div>
+          
+          <div class="active-carousel-area d-flex flex-column justify-content-between">              
+            <div class="active-carousel-text">
+              <div class="d-flex align-items-center">
+                <div class="double-codes px-2">"</div>
+                <div class="text-white px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem suscipit sed nemo, ab officia illum quibusdam consequuntur aspernatur eligendi mollitia?</div>
+              </div>
+              <div class="active-carousel-text-arrow"><i class="fas fa-sort-down"></i></div>
+            </div>                                            
+            <div class="active-carousel-img d-flex flex-column justify-content-center align-items-center text-center">
+              <div><img src="img/happy-client-03.jpg" alt="" class="rounded-circle shadow"></div>
+              <div class="py-2">Jack Paden</div>
+              <div class="card-tags small bg-pink main-color px-2">RESTAURANT OWNER</div>
+            </div>
+          </div>
+
+          <div class="active-carousel-area d-flex flex-column justify-content-between">              
+            <div class="active-carousel-text">
+              <div class="d-flex align-items-center">
+                <div class="double-codes px-2">"</div>
+                <div class="text-white px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem suscipit sed nemo, ab officia illum quibusdam consequuntur aspernatur eligendi mollitia?</div>
+              </div>
+              <div class="active-carousel-text-arrow"><i class="fas fa-sort-down"></i></div>
+            </div>                                            
+            <div class="active-carousel-img d-flex flex-column justify-content-center align-items-center text-center">
+              <div><img src="img/happy-client-02.jpg" alt="" class="rounded-circle shadow"></div>
+              <div class="py-2">Tom Baker</div>
+              <div class="card-tags small bg-pink main-color px-2">CLOTHING STORE OWNER</div>
+            </div>
+          </div>
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+      <script>
+          $('.owl-carousel').owlCarousel({
+              margin:15,
+              autoplay: true,
+              center: true,
+              loop: true,
+              nav: true,
+            });
+      </script>
+</body>
+</html>
